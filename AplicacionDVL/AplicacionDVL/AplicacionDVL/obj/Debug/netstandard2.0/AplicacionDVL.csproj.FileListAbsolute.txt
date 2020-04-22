@@ -1,0 +1,16 @@
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\bin\Debug\netstandard2.0\AplicacionDVL.deps.json
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\bin\Debug\netstandard2.0\AplicacionDVL.dll
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\bin\Debug\netstandard2.0\AplicacionDVL.pdb
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\AplicacionDVL.csprojAssemblyReference.cache
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\AplicacionDVL.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\AplicacionDVL.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\AplicacionDVL.AssemblyInfo.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\AplicacionDVL.dll
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\AplicacionDVL.pdb
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\Historial_Pedidos.xaml.g.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\Home.xaml.g.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\Pedidos.xaml.g.cs
+C:\Users\hp\Documents\AplicacionDVL\AplicacionDVL\AplicacionDVL\obj\Debug\netstandard2.0\XamlC.stamp

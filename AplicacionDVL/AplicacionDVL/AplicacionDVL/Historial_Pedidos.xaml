@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicacionDVL.Historial_Pedidos">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="overlay.png" Aspect="Fill" HeightRequest="200" VerticalOptions="StartAndExpand"/>
+            <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="Start" VerticalOptions="Center">
+
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="Se muestra el historial de tus pedidos." TextColor="White" FontSize="20" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="Realizar un pedido." TextColor="Black" FontSize="15" HorizontalOptions="Center"/>
+                <ImageButton x:Name="btnNuevoPedido" Source="anadir.png" WidthRequest="25" HeightRequest="25" CornerRadius="25" Clicked="BtnNuevoPedido_Clicked"/>
+            </StackLayout>
+
+            <ListView x:Name="detallesPedido" SeparatorVisibility="None" Grid.Row="2" Margin="20,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Grid.Row="3" HasShadow="True" CornerRadius="10" Margin="0,20,0,0" Padding="0" HeightRequest="150" VerticalOptions="Start">
+                                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.Column="0" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <AbsoluteLayout Margin="10" HeightRequest="100">
+                                            <Image Source="estacion.png" WidthRequest="20" HeightRequest="20"/>
+                                            <Label Text="{Binding Autotanque}" TextColor="#757575" FontSize="10" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0" YAlign="Center" XAlign="Center"/>
+                                        </AbsoluteLayout>
+                                        <AbsoluteLayout Margin="10" HeightRequest="100">
+                                            <Image Source="calendario.png" WidthRequest="20" HeightRequest="20"/>
+                                            <Label Text="{Binding Fecha_Programada}" TextColor="#757575" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0" YAlign="Center" XAlign="Center"/>
+                                        </AbsoluteLayout>
+                                        <AbsoluteLayout Margin="10" HeightRequest="100">
+                                            <Image Source="confirmado.png" WidthRequest="20" HeightRequest="20"/>
+                                            <Label Text="Agendado" TextColor="#757575" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0" YAlign="Center" XAlign="Center"/>
+                                        </AbsoluteLayout>
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="1" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Image Source="litros.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" Margin="20,0" />
+                                        <Label Text="{Binding TotalLitros}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Litros totales" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="2" HorizontalOptions="Center" Orientation="Vertical" VerticalOptions="Center">
+                                        <AbsoluteLayout >
+                                            <Image Source="magna.png" WidthRequest="20" HeightRequest="20"/>
+                                            <Label Text="{Binding OracionMagna}" TextColor="#757575" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0" YAlign="Center" XAlign="Center"/>
+                                        </AbsoluteLayout>
+                                        <AbsoluteLayout>
+                                            <Image Source="premium.png" WidthRequest="20" HeightRequest="20"/>
+                                            <Label Text="{Binding OracionPremium}" TextColor="#757575" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0" YAlign="Center" XAlign="Center"/>
+                                        </AbsoluteLayout>
+                                        <AbsoluteLayout >
+                                            <Image Source="diesel.png" WidthRequest="20" HeightRequest="20"/>
+                                            <Label Text="{Binding OracionDiesel}" TextColor="#757575" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0" YAlign="Center" XAlign="Center"/>
+                                        </AbsoluteLayout>
+                                    </StackLayout>
+
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

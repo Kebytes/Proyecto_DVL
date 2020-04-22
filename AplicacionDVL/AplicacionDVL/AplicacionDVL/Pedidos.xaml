@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicacionDVL.Pedidos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Padding="20,20,20,20">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Fecha deseada:" TextColor="Black" FontSize="15"/>
+                    <Image Source="calendario.png" WidthRequest="20" HeightRequest="20"/>
+                    <DatePicker x:Name="FechaDeseada" MinimumDate="04/03/2020" MaximumDate="12/31/2050" Margin="15,0,0,0"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Selecciona una estación:" TextColor="Black" FontSize="15"/>
+                    <Image Source="estacion.png" WidthRequest="20" HeightRequest="20"/>
+                    <Picker x:Name="Estacion" Title="Estación" ItemsSource="{Binding estaciones}" 
+                        ItemDisplayBinding="{Binding Nombre_Estacion}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Autotanque:" TextColor="Black" FontSize="15"/>
+                    <Image Source="estacion.png" WidthRequest="20" HeightRequest="20"/>
+                    <Picker x:Name="AutotanqueOpcion" Title="Selecciona una opción" ItemsSource="{Binding Opciones}" 
+                        ItemDisplayBinding="{Binding Nombre}"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="0,0,30,0">
+                    <Image Source="magna.png" WidthRequest="20" HeightRequest="20"/>
+                    <Entry x:Name="Magna" Placeholder="Litros de magna" BackgroundColor="White" PlaceholderColor="Gray" TextChanged="Magna_TextChanged" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    <Stepper x:Name="IncrementoMagna" Minimum="0" Maximum="100000" Value="0" Increment="10000" ValueChanged="IncrementoMagna_ValueChanged" VerticalOptions="Center"
+                             HorizontalOptions="Center"></Stepper>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="0,0,30,0">
+                    <Image Source="premium.png" WidthRequest="20" HeightRequest="20"/>
+                    <Entry x:Name="Premium" Placeholder="Litros de premium" BackgroundColor="White" PlaceholderColor="Gray" TextChanged="Premium_TextChanged" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    <Stepper x:Name="IncrementoPremium" Minimum="0" Maximum="100000" Value="0" Increment="10000" ValueChanged="IncrementoPremium_ValueChanged"
+                             VerticalOptions="Center" HorizontalOptions="Center"></Stepper>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="0,0,30,0">
+                    <Image Source="diesel.png" WidthRequest="20" HeightRequest="20"/>
+                    <Entry x:Name="Diesel" Placeholder="Litros de diesel" BackgroundColor="White" PlaceholderColor="Gray" TextChanged="Diesel_TextChanged" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    <Stepper x:Name="IncrementoDiesel" Minimum="0" Maximum="100000" Value="0" Increment="10000" ValueChanged="IncrementoDiesel_ValueChanged"
+                             VerticalOptions="Center" HorizontalOptions="Center"></Stepper>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  VerticalOptions="End">
+                    <Button Text="Realizar pedido" TextColor="White" BackgroundColor="Black" Clicked="Button_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
